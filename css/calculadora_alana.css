@@ -1,0 +1,16 @@
+p {
+	font-size: 30px;
+}
+
+.visor {
+	padding: 50px;
+}
+
+.number, .operator {
+	font-size: 30px;
+	padding: 10px;
+}
+
+.operator {
+	color: #4285F4;
+}
