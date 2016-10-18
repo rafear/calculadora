@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<title>Bruna Calculadora</title>
 	<meta charset="utf-8">
@@ -23,9 +23,9 @@
 		&nbsp;
 		<div class="row linhas">
 			<div class="col-md-12 text-center">
-				<button class="btn btn-primary" type="button" name="backspace">Backspace</button>
-				<button class="btn btn-primary" type="button" name="ce">CE</button>
-				<button class="btn btn-primary" type="button" name="c">C</button>
+				<button class="btn btn-primary operator" data-acao="limpa" type="button" name="backspace">Backspace</button>
+				<button class="btn btn-primary operator" type="button" name="ce">CE</button>
+				<button class="btn btn-primary operator" type="button" name="c">C</button>
 			</div>	
 		</div>
 		<div class="row linhas">
@@ -33,7 +33,7 @@
 				<button class="btn btn-default number" data-value="7" type="button" name="7">7</button>
 				<button class="btn btn-default number" data-value="8" type="button" name="8">8</button>
 				<button class="btn btn-default number" data-value="9" type="button" name="9">9</button>
-				<button class="btn btn-info" type="button" name="divisao">/</button>
+				<button class="btn btn-info operator" data-acao="divide" type="button" name="divisao">/</button>
 			</div>
 		</div>
 		<div class="row linhas">
@@ -41,7 +41,7 @@
 				<button class="btn btn-default number" data-value="4" type="button" name="4">4</button>
 				<button class="btn btn-default number" data-value="5" type="button" name="5">5</button>
 				<button class="btn btn-default number" data-value="6" type="button" name="6">6</button>
-				<button class="btn btn-info" type="button" name="multiplicacao">*</button>
+				<button class="btn btn-info operator" data-acao="multiplica" type="button" name="multiplicacao">*</button>
 			</div>
 		</div>
 		<div class="row linhas">
@@ -49,14 +49,14 @@
 				<button class="btn btn-default number" data-value="1" type="button" name="1">1</button>
 				<button class="btn btn-default number" data-value="2" type="button" name="2">2</button>
 				<button class="btn btn-default number" data-value="3" type="button" name="3">3</button>
-				<button class="btn btn-info" type="button" name="subtracao">-</button>
+				<button class="btn btn-info operator" data-acao="subtrai" type="button" name="subtracao">-</button>
 			</div>
 		</div>
 		<div class="row linhas">
 			<div class="col-md-12 text-center">
 				<button class="btn btn-default number" data-value="0" type="button" name="0">0</button>
-				<button class="btn btn-info" type="button" name="adicao">+</button>
-				<button class="btn btn-success" type="button" name="igual">=</button>
+				<button class="btn btn-info operator" data-acao="soma" type="button" name="adicao">+</button>
+				<button class="btn btn-success operator" data-acao="resultado" type="button" name="igual">=</button>
 			</div>
 		</div>
 	</div>
