@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teste de calculadora</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ricardo.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- number operator -->
+	<div class="container">
+	  <h1>Calculadora do Ricardo </h1>
+	  <p>&nbsp;</p>
+
+	  <div class="row">
+	  	<div class="col-md-6 col-md-offset-3">
+	  		<input type="number" class="form-control" id="visor" name="visor">
+	  	</div>
+	  </div>
+	  
+	  <p></p>
+
+	  <div class="row">
+	  	<div class="col-md-6 col-md-offset-3">
+	  		<button class="btn btn-default number" data-value="7" type="button"> 7 </button>
+	  		<button class="btn btn-default number" data-value="8" type="button"> 8 </button>
+	  		<button class="btn btn-default number" data-value="9" type="button"> 9 </button>
+	  		<button class="btn btn-info operator" type="button" data-acao="divisao"> / </button>
+	  	</div>
+	  </div>
+
+	  <p></p>
+	  <div class="row">
+	  	<div class="col-md-6 col-md-offset-3">
+	  		<button class="btn btn-default number"  data-value="4" type="button"> 4 </button>
+	  		<button class="btn btn-default number"  data-value="5" type="button"> 5 </button>
+	  		<button class="btn btn-default number"  data-value="6" type="button"> 6 </button>
+	  		<button class="btn btn-info operator" type="button" data-acao="multiplica"> x </button>
+	  	</div>
+	  </div>
+	  <p></p>
+
+	  <div class="row">
+	  	<div class="col-md-6 col-md-offset-3">
+	  		<button class="btn btn-default number" data-value="1" type="button"> 1 </button>
+	  		<button class="btn btn-default number" data-value="2" type="button"> 2 </button>
+	  		<button class="btn btn-default number" data-value="3" type="button"> 3 </button>
+	  		<button class="btn btn-info operator" type="button" data-acao="soma"> + </button>
+	  	</div>
+	  </div>
+	  <p></p>
+
+	  <div class="row">
+	  	<div class="col-md-6 col-md-offset-3">
+	  		<button class="btn btn-info operator" type="button" data-acao="limpa"> C </button>
+	  		<button class="btn btn-default number"  data-value="0" type="button"> 0 </button>
+	  		<button class="btn btn-info operator" type="button" data-acao="resultado"> = </button>
+	  		<button class="btn btn-info operator" type="button" data-acao="subtrai"> - </button>
+	  	</div>
+	  </div>
+      
+
+    </div><!-- /.container -->
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/ricardo.js"></script>
+</body>
+</html>
