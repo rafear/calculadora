@@ -12,22 +12,22 @@
 	<div class="row">
 		<p>Vamos calcular? (mano que merda)</p>
 	</div>
-	<div class="row visor" id="visor">
+	<div class="row visor">
 		<div class="col-md-4">
-			
+			<input type="text" name="visor" id="visor">
 		</div>
 	</div>
 	<div class="row">
-		<button type="button" class="col-md-1 operator">
+		<button type="button" class="col-md-1 operator" data-acao="limpartudo">
 			CE
 		</button>
-		<button type="button" class="col-md-1 operator">
+		<button type="button" class="col-md-1 operator" data-acao="dividir">
 			/
 		</button>
-		<button type="button" class="col-md-1 operator">
+		<button type="button" class="col-md-1 operator" data-acao="multiplicar">
 			*
 		</button>
-		<button type="button" class="col-md-1 operator">
+		<button type="button" class="col-md-1 operator" data-acao="limpar">
 			C
 		</button>
 	</div>
@@ -41,7 +41,7 @@
 		<button type="button" class="col-md-1 number" data-value="9">
 			9
 		</button>
-		<button type="button" class="col-md-1 operator">
+		<button type="button" class="col-md-1 operator" data-acao="subtrair">
 			-
 		</button>
 	</div>
@@ -55,7 +55,7 @@
 		<button type="button" class="col-md-1 number" data-value="6">
 			6
 		</button>
-		<button type="button" class="col-md-1 operator">
+		<button type="button" class="col-md-1 operator" data-acao="somar">
 			+
 		</button>
 	</div>
@@ -83,7 +83,7 @@
 		<button type="button" class="col-md-1 operator">
 			+/-
 		</button>
-		<button type="button" class="col-md-1 operator equal">
+		<button type="button" class="col-md-1 operator equal" data-acao="resultado">
 			=
 		</button>
 	</div>
