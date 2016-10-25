@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/calculadora_gabs.css">
+</head>
+<body>
+	<div class="container-fluid center-block">
+
+		<div class="row">
+			<div class="col-md-12">
+				<input type="number" name="" id="visor">
+			</div>
+		</div>
+
+			<div class="row">
+				<div>
+					<button type="button" class="col-md-1 btn btn-warning finalizador" data-acao="limpar">CE</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-warning finalizador limpartudo" data-acao="limpartudo">C</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-warning operator"><i class="fa fa-times-circle" aria-hidden="true"></i>
+					</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-warning operator"  data-acao="dividir">/</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div>
+					<button type="button" class="col-md-1 btn btn-default number" data-value="7">7</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-default number" data-value="8">8</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-default number" data-value="9">9</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-warning operator"  data-acao="multiplicar">*</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div>
+					<button type="button" class="col-md-1 btn btn-default number" data-value="4">4</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-default number" data-value="5">5</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-default number" data-value="6">6</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-warning operator"  data-acao="subtrair">-</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div>
+					<button type="button" class="col-md-1 btn btn-default number" data-value="1">1</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-default number" data-value="2">2</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-default number" data-value="3">3</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-warning operator"  data-acao="somar">+</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div>
+					<button type="button" class="col-md-1 btn btn-warning">&nbsp;</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-default number" data-value="0">0</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-warning operator"  data-acao="virgula">,</button>
+				</div>
+
+				<div>
+					<button type="button" class="col-md-1 btn btn-warning finalizador"  data-acao="resultado">=</button>
+				</div>
+
+			</div>
+
+		</div> 
+
+
+<script type="text/javascript" src="js/calculadora_gabs.js"></script>
+</body>
+</html>
