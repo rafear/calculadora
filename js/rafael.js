@@ -1,8 +1,9 @@
 var numeros = document.getElementsByClassName('number');
 var operadores = document.getElementsByClassName('operator');
+var finalizadores = document.getElementsByClassName('finalizador');
 var valorTotal = 0;
 var clearVisor = false;
-var funcaoAserExecutada = '';
+var funcaoAserExecutada = null;
 var visor = document.getElementById('visor');
 
 for (var i in numeros){
@@ -22,35 +23,63 @@ for (var i in numeros){
 	});
 }
 
+// para as operações
 for( var i in operadores) {
 	if(typeof operadores[i] !== 'object') {
 		continue;
 	}
 	operadores[i].addEventListener('click', function() {
-		//console.log(this.dataset.acao);
-		window[this.dataset.acao]();
+
+		//executa a funcao
+		if(funcaoAserExecutada != null && clearVisor == false) { 
+			funcaoAserExecutada();
+		}  else {
+			valorTotal = visor.value;
+		}
+		clearVisor = true;
+		funcaoAserExecutada = window[this.dataset.acao];
 	});	
 }
 
+for (var i in finalizadores) {
+	if(typeof finalizadores[i] !== 'object') {
+		continue;
+	}
+	finalizadores[i].addEventListener('click', function() {
+		window[this.dataset.acao]();
+	});
+}
 function soma() { 
-	funcaoAserExecutada = function() {
-		valorTotal = parseInt(valorTotal) + parseInt(visor.value); 
-		visor.value = valorTotal;
-		clearVisor = true;	
-	};
-	clearVisor = true;	
-
-	
+	valorTotal = parseInt(valorTotal) + parseInt(visor.value); 
+	visor.value = valorTotal;
+}
+function subtrai() {
+	valorTotal = parseInt(valorTotal) - parseInt(visor.value); 
+	visor.value = valorTotal;
 }
 
-function subtrai() { alert('subtrai') }
+function divide() { 
+	valorTotal = parseInt(valorTotal) / parseInt(visor.value); 
+	visor.value = valorTotal;
+}
 
-function divide() { alert('divide') }
+function multiplica() { 
+	valorTotal = parseInt(valorTotal) * parseInt(visor.value); 
+	visor.value = valorTotal;
+}
 
-function multiplica() { alert('multiplica') }
+function resultado() { 
+	funcaoAserExecutada();
+	clearVisor = true;
+	funcaoAserExecutada = null;
+}
 
-function resultado() { alert('resultado') }
 
 
+function limpa() { 
+	valorTotal = 0;
+	visor.value = '';
+	clearVisor = true;
+	funcaoAserExecutada = null;
 
-function limpa() { alert('limpa') }
+}
